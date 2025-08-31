@@ -1,0 +1,14 @@
+.unauthContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: white;
+}
+
+.unauthContainer p {
+  color: red;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}

@@ -1,0 +1,110 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f8f9fa;
+  font-family: "Poppins", sans-serif;
+}
+
+.formBox {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  width: 90%; /* ✅ Width 80% */
+  height: 80vh;
+  max-width: 800px; /* optional: limit max size on large screens */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.inputBox {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.inputBox:focus {
+  border-color: #007bff;
+}
+
+.textArea {
+  flex: 1; /* ✅ textarea ko expand karne ke liye */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: none;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.textArea:focus {
+  border-color: #007bff;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.deleteBtn {
+  flex: 1;
+  padding: 10px;
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.deleteBtn:hover {
+  background: #b02a37;
+}
+
+.dashboardBtn {
+  flex: 1;
+  padding: 10px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dashboardBtn:hover {
+  background: #0056b3;
+}
+
+.unauthContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: white;
+}
+
+.unauthContainer p {
+  color: red;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}

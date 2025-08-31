@@ -1,0 +1,89 @@
+.container {
+  width: 100%;
+  padding: 32px 16px;
+  /* background-color: #f5f5f5; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Create Note Button */
+.createButtonWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.createButton {
+  width: 100%; /* Full width button */
+  max-width: 343px;
+  max-height: 52px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -1%;
+  background-color: #367aff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.createButton:hover {
+  background-color: #235dc1;
+}
+
+/* Notes Section */
+.notesSection {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Left align notes section */
+}
+
+.notesHeading {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 110%;
+  margin-bottom: 12px;
+  color: #232323;
+  /* background-color: aqua; */
+  text-align: left; /* Left align heading */
+}
+
+/* Note Strip */
+.noteStrip {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 16px;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px #00000096;
+  margin-bottom: 12px;
+  width: 100%; /* Full width strip */
+  max-width: 343px;
+  max-height: 50px;
+  /* background-color: #ff4d4d; */
+}
+
+.noteTitle {
+  font-size: 16px;
+  color: #232323;
+}
+
+.deleteIcon {
+  color: #050400;
+  font-size: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+.deleteIcon:hover {
+  opacity: 0.7;
+}

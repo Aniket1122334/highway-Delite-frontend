@@ -1,0 +1,342 @@
+.mainbox {
+  display: flex;
+  justify-content: center;
+  border: 2px solid rgb(43, 42, 42);
+  border-radius: 10px;
+}
+
+.container {
+  background-color: white;
+  width: 100%;
+  min-height: 100vh;
+  border-radius: 10px;
+  display: flex;
+  align-items: stretch; /* pura height lega */
+  justify-content: space-between;
+}
+
+.leftBox {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 16px 8px;
+  flex: 1;
+}
+
+.upperbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.upperbox .icon {
+  padding: 0px 12px;
+}
+
+/* ✅ Signup ko neeche push karne ke liye */
+.left {
+  display: flex;
+  justify-content: center; /* neeche push */
+  align-items: center;
+  width: 591px;
+  height: 100vh;
+  /* background-color: #367aff; */
+  box-sizing: border-box;
+  /* padding-bottom: 100px; aur neeche karne ke liye value bada do */
+}
+
+.inner {
+  width: 528px;
+  padding: 0px 74px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* background-color: aqua; */
+}
+
+.inner h2 {
+  font-weight: bold;
+  letter-spacing: -4px;
+  font-size: 40px;
+  line-height: 110%;
+  text-align: left;
+}
+
+.inner span {
+  font-size: 18px;
+  line-height: 150%;
+  color: #969696;
+}
+
+.heading {
+  margin-bottom: 10px;
+}
+
+.relativeClass {
+  position: relative;
+}
+
+.labelClass {
+  background-color: white;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 82px;
+  height: 21px;
+  left: 4px;
+  top: -10px;
+}
+
+.labelClass > span {
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 500;
+}
+
+.buttonSize {
+  width: 399px;
+  height: 54px;
+  border-radius: 10px;
+  background-color: #367aff;
+  transition: all 0.3s ease;
+}
+
+.buttonSize:hover {
+  background-color: #285fd6;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.inputBorder {
+  width: 399px;
+  height: 59px;
+  border: 1.5px solid #d9d9d9;
+  padding: 16px;
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 400;
+  color: #232323;
+}
+
+/* ✅ Right Side Image Container */
+.rightImage {
+  flex: 1; /* left ke baad full space le */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* container ke height ke equal */
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+/* ✅ Right Side Background Image */
+.right {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-size: cover; /* image ko pura cover karna */
+  background-position: center; /* center align */
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* OTP Eye */
+.otpWrapper {
+  position: relative;
+}
+
+.otpInputWrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.otpInputWrapper input {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.eyeIcon {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+  color: #232323;
+}
+
+/* Already have account */
+.signInLink {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 18px;
+  color: #232323;
+}
+
+.signInLink .link {
+  color: #367aff;
+  text-decoration: underline;
+  margin-left: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.signInLink .link:hover {
+  opacity: 0.8;
+}
+
+/* Divider */
+.orDivider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #777;
+  position: relative;
+}
+
+.orDivider::before,
+.orDivider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #ddd;
+  margin: 0 8px;
+}
+
+/* Google Button */
+.googleWrapper {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.googleButton {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 500;
+
+  background-color: #ffffff;
+  color: #232323;
+  border: 1.5px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.googleButton:hover {
+  background-color: #f8f8f8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.googleButton:active {
+  transform: translateY(0px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.googleIcon {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+/* ✅ Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column; /* left aur right ek ke niche ek */
+    width: 100%;
+    height: auto;
+  }
+
+  .leftBox {
+    width: 100%;
+    align-items: center; /* center horizontally */
+  }
+
+  .upperbox {
+    justify-content: center;
+    /* margin-bottom: 816px; */
+  }
+
+  .left {
+    width: 100%;
+    height: auto;
+    justify-content: flex-start; /* upar se start hoga */
+    padding-top: 30px; /* thoda neeche space */
+  }
+
+  .inner {
+    width: 100%;
+    max-width: 400px; /* mobile par limit kar diya */
+    padding: 0 16px; /* left right padding only */
+    justify-content: flex-start;
+    align-items: center; /* center horizontally */
+    text-align: center;
+  }
+
+  .inner h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+
+  .heading {
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  .heading span {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 16px;
+    font-size: 16px;
+  }
+
+  .buttonSize,
+  .inputBorder {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  /* ✅ Right Side Image hide */
+  .rightImage {
+    display: none;
+  }
+
+  .signInLink {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  .buttonSize,
+  .inputBorder {
+    width: 100%; /* Full width inputs and buttons */
+  }
+
+  /* ✅ Inputs aur Buttons full width */
+  .buttonSize,
+  .inputBorder,
+  .otpInputWrapper input {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+    display: block;
+  }
+
+  form {
+    width: 380px;
+    padding: 16px;
+  }
+}

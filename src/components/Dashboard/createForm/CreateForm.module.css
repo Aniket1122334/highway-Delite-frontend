@@ -1,0 +1,143 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center alignment for all screens */
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0e7ff 0%, #f3e8ff 100%);
+  padding: 20px; /* Base padding for mobile */
+}
+
+.form {
+  background: white;
+  padding: 24px; /* Increased padding for mobile */
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 95%; /* Increased width for mobile */
+  max-height: 80vh; /* Increased height for mobile */
+  overflow-y: auto; /* Allow scrolling if content overflows */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #2d3748;
+  transition: color 0.3s ease;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 14px; /* Slightly increased for better touch area */
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 15px; /* Slightly increased for readability */
+  font-family: "Inter", sans-serif;
+  background-color: #f7fafc;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: #3182ce;
+  box-shadow: 0 0 8px rgba(49, 130, 206, 0.3);
+  background-color: white;
+  outline: none;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 110px; /* Slightly increased for mobile */
+}
+
+.button {
+  width: 100%;
+  padding: 14px; /* Increased for better touch area */
+  background: linear-gradient(90deg, #3182ce 0%, #63b3ed 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px; /* Slightly increased for readability */
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background: linear-gradient(90deg, #2b6cb0 0%, #4c9ede 100%);
+  transform: translateY(-2px);
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+/* Tablet (min-width: 768px) */
+@media (min-width: 768px) {
+  .container {
+    padding: 30px;
+  }
+
+  .form {
+    padding: 30px;
+    max-width: 600px;
+    max-height: 90vh;
+  }
+
+  .section {
+    margin-bottom: 25px;
+  }
+
+  .label {
+    font-size: 18px;
+  }
+
+  .input,
+  .textarea {
+    padding: 14px;
+    font-size: 16px;
+  }
+
+  .textarea {
+    min-height: 120px;
+  }
+
+  .button {
+    padding: 14px;
+    font-size: 18px;
+  }
+}
+
+/* Desktop (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .container {
+    padding: 40px;
+  }
+
+  .form {
+    padding: 40px;
+    max-width: 600px;
+    max-height: 95vh; /* Maintain increased height for desktop */
+  }
+
+  .section {
+    margin-bottom: 30px;
+  }
+}
