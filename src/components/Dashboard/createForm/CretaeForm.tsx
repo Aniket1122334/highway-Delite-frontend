@@ -37,7 +37,7 @@ const CreateForm: React.FC = () => {
       }
 
       await axios.post(
-        "http://localhost:3000/api/notes/createnote",
+        "https://highway-delite-backend-7irg.onrender.com/api/notes/createnote",
         { heading, noteMessage },
         { headers: { Authorization: `Bearer ${token}` } }
       );
