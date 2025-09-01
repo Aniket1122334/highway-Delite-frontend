@@ -37,9 +37,12 @@ const NoteCreate: React.FC = () => {
         return;
       }
 
-      await axios.delete(`https://highway-delite-backend-7irg.onrender.com/api/notes/deletenote/${id}`, {
-        headers: { Authorization: `Bearer ${token}` },
-      });
+      await axios.delete(
+        `https://highway-delite-backend-7irg.onrender.com/api/notes/deletenote/${id}`,
+        {
+          headers: { Authorization: `Bearer ${token}` },
+        }
+      );
 
       // 🔹 Delete hone ke baad UI se bhi note hata do
       setNotes((prevNotes) => prevNotes.filter((note) => note._id !== id));
@@ -61,11 +64,14 @@ const NoteCreate: React.FC = () => {
           return;
         }
 
-        const res = await axios.get("http://localhost:3000/api/notes/shownote", {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        });
+        const res = await axios.get(
+          "https://highway-delite-backend-7irg.onrender.com/api/notes/shownote",
+          {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+          }
+        );
 
         setNotes(res.data.notes || []);
       } catch (err: any) {
