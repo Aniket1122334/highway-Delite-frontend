@@ -23,7 +23,7 @@ const ShowForm: React.FC = () => {
 
       try {
         const res = await axios.get(
-          `http://localhost:3000/api/notes/shownote/${id}`,
+          `https://highway-delite-backend-7irg.onrender.com/api/notes/shownote/${id}`,
           {
             headers: { Authorization: `Bearer ${token}` },
           }
@@ -53,7 +53,7 @@ const ShowForm: React.FC = () => {
 
     try {
       await axios.delete(
-        `http://localhost:3000/api/notes/deletenote/${id}`,
+        `https://highway-delite-backend-7irg.onrender.com/api/notes/deletenote/${id}`,
         { headers: { Authorization: `Bearer ${token}` } }
       );
       alert("Note deleted successfully");
