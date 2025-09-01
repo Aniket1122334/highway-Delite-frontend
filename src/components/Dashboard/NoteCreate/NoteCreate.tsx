@@ -37,7 +37,7 @@ const NoteCreate: React.FC = () => {
         return;
       }
 
-      await axios.delete(`http://localhost:3000/api/notes/deletenote/${id}`, {
+      await axios.delete(`https://highway-delite-backend-7irg.onrender.com/api/notes/deletenote/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
 
