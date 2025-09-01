@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
         return;
       }
 
-      // 🔹 Backend call
+      // 🔹 Backend call (updated URL)
       await axios.post(
         "https://highway-delite-backend-7irg.onrender.com/api/signout",
         {},
