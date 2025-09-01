@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
 
       // 🔹 Backend call
       await axios.post(
-        "http://localhost:3000/api/signout",
+        "https://highway-delite-backend-7irg.onrender.com/api/signout",
         {},
         {
           headers: { Authorization: `Bearer ${token}` },
